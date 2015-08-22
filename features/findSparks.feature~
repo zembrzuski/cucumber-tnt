@@ -1,0 +1,88 @@
+# language: pt
+
+Funcionalidade: Login web page
+
+#Scenario: Do successful login
+#	Given I am on LMS+
+#	When I make login with user "joelson" and password "joelson"
+#	Then LMS+ main page will open
+
+#Scenario:
+#	Given I am on LMS+
+#	When I make login with user "joelson" and password "senhaErrada"
+#	Then Fail message will appear on screen
+
+
+#Scenario: Login in LMS+ and open territorio screen
+#	Given I am on LMS+
+#	And I make login with user "joelson" and password "joelson"
+#
+#	When I open the main menu
+#	And I click in "Vendas"
+#	And I click in "Cadastros Gerais"
+#	And I click in "???manterTerritorios???"
+#
+#	Then The screen called "cadastroTerritorio" will appear on screen
+
+
+
+#Scenario: Login in LMS+ and open executivo screen screen
+#        Given I am on LMS+
+#        And I make login with user "joelson" and password "joelson"
+#
+#        When I open the main menu
+#        And I click in "Vendas"
+#        And I click in "Cadastros Gerais"
+#        And I click in "???manterExecutivos???"
+#
+#        Then The screen called "manterExecutivos" will appear on screen
+
+
+#Scenario: Nagigate to Localizacao AWB Cia Aérea
+#	Given I am on LMS+
+#	And I make login with user "joelson" and password "joelson"
+#	And I open the main menu
+#	And I click in "Expedição"
+#	And I click in "Cadastros Gerais"
+#	When I click in "Manter Localização AWB Cia Aérea"
+#	Then The screen called "Manter Localização AWB Cia Aérea" will appear on screen
+
+
+
+
+
+#Cenario: Buscar TAM em Manter Localizacao CIA Aerea
+#
+#	Aqui eu posso colocar alguma descricao mais detalhada
+#	para explicar esse cenario
+#
+#        Dado que estou no LMS+
+#        E faco login com usuario "joelson" e senha "joelson"
+#        E abro o menu principal
+#        E clico em "Expedição"
+#        E clico em "Cadastros Gerais"
+#        E clico em "Manter Localização AWB Cia Aérea"
+#
+#	Quando preencho o campo "Evento da Cia Aérea" com o valor "TAM LINHAS AEREAS S/A"
+#
+#       Entao The screen called "Manter Localização AWB Cia Aérea" will appear on screen
+
+
+
+
+
+Cenario: Gravar um territorio no banco de dados
+
+	Teste simples para gravar um territorio
+
+        Dado que estou no LMS+
+        E faco login com usuario "joelson" e senha "joelson"
+        E abro o menu principal
+        E clico em "Vendas"
+        E clico em "Cadastros Gerais"
+        E clico em "???manterTerritorios???"
+
+	Quando preencho o campo "Evento da Cia Aérea" com o valor "TAM LINHAS AEREAS S/A"
+
+        Entao The screen called "Manter Localização AWB Cia Aérea" will appear on screen
+
